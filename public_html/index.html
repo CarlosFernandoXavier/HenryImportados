@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Henry Importados</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Carlos Xavier">
+        <!--<link rel="stylesheet" href="./bootstrap/bootstrap.css">-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header class="row">
+                <div class="col-xs-8 col-sm-4">
+                    <img src="images/logo.png" alt="logo" id="logo" class="img-responsive">
+                </div>
+                <div class="col-xs-12 col-sm-5" id="campoInput">
+                    <form class="form-horizontal" id="pesquisa"><!--Deixa o formulário na horizontal-->
+                        <div class="input-group"><!--Assim o input o o ícone de pesquisa ficam como se fosse um componente só do lado do outro-->
+                            <input type="text" class="form-control" placeholder="Pesquise pelo produto desejado">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class=" col-sm-3" id="alturaCarrinhoCompras">
+                    <img src="images/carrinho.png" alt="carrinhoCompras" class="img-responsive" id="carrinhoCompras">
+                </div>
+            </header>
+            <div id = "menu" class="row amarelo" >
+                <div class="col-sm-12 col-md-12">
+                    <ul class="nav nav-tabs">
+                        <li id="acessorios"><a href="index.html">Início</a></li>
+                        <li><a href="Acessorios.html">Acessórios</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Meninas<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Roupas</a></li>
+                                <li><a href="#">Sapatos</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Meninos<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Roupas</a></li>
+                                <li><a href="#">Sapatos</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Opções<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Como comprar</a></li>
+                                <li><a href="#">Perguntas frequentes</a></li>
+                                <li><a href="#">Posso confiar?</a></li>
+                                <li><a href="#">Políticas de vendas</a></li>
+                                <li><a href="#">Prazo</a></li>
+                                <li><a href="#">Leia antes da compra</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="section" class="row">
+                <div class="col-sm-3 col-md-3 col-lg-2" id="menuLateral">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="Acessorios.html" class="item">Acessórios</a></li>
+                    </ul>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="#" class="item" id="meninas">Meninas</a></li>
+                        <li><a href="#" class="bege letraPreta">Sapatos</a></li>
+                        <li><a href="#" class="bege letraPreta">Roupas</a></li>
+                    </ul>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="#" class="item" id="meninos">Meninos</a></li>
+                        <li><a href="#" class="azul letraPreta">Sapatos</a></li>
+                        <li><a href="#" class="azul letraPreta">Roupas</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-lg-2 margemTop">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="images/calca_jaqueta.jpg" class="img-responsive" alt="imagem">
+                            <div class="caption descricao">
+                                <p>Conjunto roupa esporte masculino</p>
+                                <p class="vermelho"><strike class="vermelho">De R$94,90</strike> R$74,90</p>
+                                <p>R$74,90 no deposito ou boleto ou 10x de R$7,49 sem juros no Pagseguro</p>
+                                <center><img src="images/frete_gratis.gif" class="img-responsive" alt="frete_gratis"></center>
+                                <center><img src="images/comprar.gif" class="img-responsive" alt="compra"></center>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-lg-2 margemTop">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="images/banho.jpg" class="img-responsive" alt="Almofada de banho do bebê">
+                            <div class="caption descricao">
+                                <p>Almofada de banho do bebê</p>
+                                <p class="vermelho"><strike class="vermelho">De R$159,99</strike> R$129,90</p>
+                                <p>R$129,90 no deposito ou boleto ou 10x de R$12,99 sem juros no Pagseguro</p>
+                                <center><img src="images/frete_gratis.gif" class="img-responsive" alt="frete_gratis"></center>
+                                <center><img src="images/comprar.gif" class="img-responsive" alt="compra"></center>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-lg-2 margemTop">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="images/biquini.jpg" class="img-responsive" alt="biquini">
+                            <div class="caption descricao">
+                                <p>Biquíni Oncinha </p>
+                                <p class="vermelho"><strike class="vermelho">De R$69,90</strike> R$49,90</p>
+                                <p>R$49,90 no deposito ou boleto ou 9x de R$5,54 sem juros no Pagseguro</p>
+                                <center><img src="images/frete_gratis.gif" class="img-responsive" alt="frete_gratis"></center>
+                                <center><img src="images/comprar.gif" class="img-responsive" alt="compra"></center>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-lg-2 margemTop" >
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="images/biquinis.jpg" class="img-responsive" alt="biquinis">
+                            <div class="caption descricao">
+                                <p>Biquínis Mult Estilo</p>
+                                <p class="vermelho"><strike class="vermelho">De R$79,90</strike> R$49,90</p>
+                                <p>R$49,90 no deposito ou boleto ou 9x de R$5,54 sem juros no Pagseguro</p>
+                                <center><img src="images/frete_gratis.gif" class="img-responsive" alt="frete_gratis"></center>
+                                <center><img src="images/comprar.gif" class="img-responsive" alt="compra"></center>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-lg-2 margemTop margemEsquerda">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="images/mulher.jpg" class="img-responsive" alt="mulher">
+                            <div class="caption descricao">
+                                <p>Biquíni Menina Flor </p>
+                                <p class="vermelho"><strike class="vermelho">De R$69,90</strike> R$49,90</p>
+                                <p>R$49,90 no deposito ou boleto ou 9x de R$5,54 sem juros no Pagseguro</p>
+                                <center><img src="images/frete_gratis.gif" class="img-responsive" alt="frete_gratis"></center>
+                                <center><img src="images/comprar.gif" class="img-responsive" alt="compra"></center>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-lg-2 margemTop">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="images/body.jpg" class="img-responsive" alt="body">
+                            <div class="caption descricao">
+                                <p>Biquíni Minnie </p>
+                                <p class="vermelho"><strike class="vermelho">De R$69,90</strike> R$49,90</p>
+                                <p>R$49,90 no deposito ou boleto ou 9x de R$5,54 sem juros no Pagseguro</p>
+                                <center><img src="images/frete_gratis.gif" class="img-responsive" alt="frete_gratis"></center>
+                                <center><img src="images/comprar.gif" class="img-responsive" alt="compra"></center>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-lg-2 margemTop">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="images/floral.jpg" class="img-responsive" alt="floral">
+                            <div class="caption descricao">
+                                <p>Calcinha e Faixa Floral </p>
+                                <p class="vermelho"><strike class="vermelho">De R$69,90</strike> R$49,90</p>
+                                <p>R$49,90 no deposito ou boleto ou 9x de R$5,54 sem juros no Pagseguro</p>
+                                <center><img src="images/frete_gratis.gif" class="img-responsive" alt="frete_gratis"></center>
+                                <center><img src="images/comprar.gif" class="img-responsive" alt="compra"></center>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-lg-2 margemTop segundoQuadrante" id="camisetaMasculinaInfantil">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="images/camiseta.jpg" class="img-responsive" alt="Camiseta Menino social ">
+                            <div class="caption descricao">
+                                <p>Camiseta Menino social</p>
+                                <p class="vermelho"><strike class="vermelho">De R$84,90</strike> R$74,90</p>
+                                <p>R$74,90 no deposito ou boleto ou 10x de R$7,49 sem juros no Pagseguro</p>
+                                <center><img src="images/frete_gratis.gif" class="img-responsive" alt="frete_gratis"></center>
+                                <center><img src="images/comprar.gif" class="img-responsive" alt="compra"></center>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-12" id="produtoDestaque">
+                    <img src="images/produtosDestaque.png" class="img-responsive" alt="tag dos produtos em destaque">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-lg-2 margemTop margemEsquerda ">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="images/biquinis.jpg" class="img-responsive" alt="biquinis">
+                            <div class="caption descricao">
+                                <p>Biquínis Mult Estilo</p>
+                                <p class="vermelho"><strike class="vermelho">De R$79,90</strike> R$49,90</p>
+                                <p>R$49,90 no deposito ou boleto ou 9x de R$5,54 sem juros no Pagseguro</p>
+                                <center><img src="images/frete_gratis.gif" class="img-responsive" alt="frete_gratis"></center>
+                                <center><img src="images/comprar.gif" class="img-responsive" alt="compra"></center>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-lg-2 margemTop">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="images/meninaLeopardo.jpg" class="img-responsive" alt="Body e Faixa Leopardo ">
+                            <div class="caption descricao">
+                                <p>Body e Faixa Leopardo </p>
+                                <p class="vermelho"><strike class="vermelho">De R$79,99</strike> R$59,90</p>
+                                <p>R$59,90 no deposito ou boleto ou 10x de R$5,99 sem juros no Pagseguro</p>
+                                <center><img src="images/frete_gratis.gif" class="img-responsive" alt="frete_gratis"></center>
+                                <center><img src="images/comprar.gif" class="img-responsive" alt="compra"></center>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-lg-2 margemTop">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="images/body oncinha.jpg" class="img-responsive" alt="Body oncinha">
+                            <div class="caption descricao">
+                                <p>Body Oncinha Baby </p>
+                                <p class="vermelho"><strike class="vermelho">De R$59,90</strike> R$39,90</p>
+                                <p>R$39,90 no deposito ou boleto ou 7x de R$5,70 sem juros no Pagseguro</p>
+                                <center><img src="images/frete_gratis.gif" class="img-responsive" alt="frete_gratis"></center>
+                                <center><img src="images/comprar.gif" class="img-responsive" alt="compra"></center>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-lg-2 margemTop" id="vestidoDeBaile">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="images/vestidoBaile.png" class="img-responsive" alt="Vestido de Baile  oncinha">
+                            <div class="caption descricao">
+                                <p>Vestido de Baile </p>
+                                <p class="vermelho"><strike class="vermelho">De R$129,90</strike> R$109,90</p>
+                                <p>R$109,90 no deposito ou boleto ou 10x de R$10,99 sem juros no Pagseguro</p>
+                                <center><img src="images/frete_gratis.gif" class="img-responsive" alt="frete_gratis"></center>
+                                <center><img src="images/comprar.gif" class="img-responsive" alt="compra"></center>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <center><img src="images/pagueSeguro.png" class="img-responsive" alt="pagueSeguro"></center>
+            </div>
+            <footer class="row">
+                <div class="col-sm-12">
+                    <center><p>Formas de Pagamento: Cartão de Crédito, Cartão de Débito e Depósito Bancário</p></center>
+                    <center><img src="images/formasdepag.png" class="img-responsive" alt="pagueSeguro"></center>
+                    <center><h4>Desenvolvido por <a href=" " id="desenvolvedor">Carlos Xavier</a></h4></center>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
