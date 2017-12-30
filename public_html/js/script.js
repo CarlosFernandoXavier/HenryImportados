@@ -15,7 +15,7 @@ $(document).ready(function () {
        $("#conteudo").load("Acessorios.html") ;
     });
     $("#inicio").click(function(){
-        $("conteudo").load("inicio.html");
+        $("#conteudo").load("inicio.html");
     });
     /*TROCAR AS IMAGENS DE FRETE E COMPRA POR UM BOTÃO DE COMPRAS COM UM CARRINHO*/
 
