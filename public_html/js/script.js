@@ -11,6 +11,9 @@ $(document).ready(function () {
     $(".thumbnail a img").mouseleave(function () {
         $(this).animate({width: "120px"}, "fast");
     });
+    $("#botaoAcessorios").click(function(){
+       $("#conteudo").load("Acessorios.html") ;
+    });
     /*TROCAR AS IMAGENS DE FRETE E COMPRA POR UM BOTÃO DE COMPRAS COM UM CARRINHO*/
 
 
