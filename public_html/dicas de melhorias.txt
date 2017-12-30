@@ -1,0 +1,8 @@
+Ideias de melhoria:
+
+Quando eu apertar nos botões Meninas ou Meninos, desce
+as opções Sapatos e roupas. Se não, os botões Sapatos e Roupas
+ficam ocultos.
+
+Achar alguma forma de aparecer as opções do menu apenas passando
+o mouse por cima, sem a necessidade de clicar.
