@@ -13,6 +13,9 @@ $(document).ready(function () {
     $("#inicio").click(function () {
         $("#conteudo").load("inicio.html");
     });
+    $(".botaoRoupaFeminina").click(function(){
+       $("#conteudo").load("RoupasMeninas.html");
+    });
     /*TROCAR AS IMAGENS DE FRETE E COMPRA POR UM BOTÃO DE COMPRAS COM UM CARRINHO*/
 
 
