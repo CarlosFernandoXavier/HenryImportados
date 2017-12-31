@@ -1,23 +1,29 @@
 $(document).ready(function () {
+    /*Redireciona para minha página no facebook*/
     $("#desenvolvedor").click(function () {
         window.open('https://www.facebook.com/carlos.fernando.5851', '_blank');
     });
-    
-    /*Faz o efeito de zoom nas imagens*/
-    $(".thumbnail a img").hover(function () {
-        $(this).animate({width: "150px"}, "fast");
+    /*Carrega a página inicio.html quando o site é aberto*/
+    $("#conteudo").load("inicio.html");
+    /*Chama a página acessorios.html quando o botaoAcessorios for clicado*/
+    $("#botaoAcessorios").click(function () {
+        $("#conteudo").load("Acessorios.html");
     });
-    /*Retorna a imagem ao tamanho origina*/
-    $(".thumbnail a img").mouseleave(function () {
-        $(this).animate({width: "120px"}, "fast");
-    });
-    $("#botaoAcessorios").click(function(){
-       $("#conteudo").load("Acessorios.html") ;
-    });
-    $("#inicio").click(function(){
+    /*Chama a página inicio.html quando o botao inicio for clicado*/
+    $("#inicio").click(function () {
         $("#conteudo").load("inicio.html");
     });
     /*TROCAR AS IMAGENS DE FRETE E COMPRA POR UM BOTÃO DE COMPRAS COM UM CARRINHO*/
+
+
+    /*Faz o efeito de zoom nas imagens
+     $(".thumbnail a img").hover(function () {
+     $(this).animate({width: "150px"}, "fast");
+     });
+     Retorna a imagem ao tamanho origina
+     $(".thumbnail a img").mouseleave(function () {
+     $(this).animate({width: "120px"}, "fast");
+     });*/
 
 
 });
