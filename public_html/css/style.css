@@ -105,6 +105,9 @@ footer{
 div.container-fluid{
     width: 100%;
 }
+#botaoLateralSapatosFemininos, #botaoLateralRoupasFemininas, #botaoLateralRoupasMasculinas, #botaoLateralSapatosMasculinos{
+    display:none;
+}
 @media screen and (max-width: 414px){
     #menuLateral{
         display: none;
