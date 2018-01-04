@@ -18,6 +18,11 @@ $(document).ready(function () {
     $(".botaoRoupaFeminina").click(function () {
         $("#conteudo").load("roupasMeninas.html");
     });
+     /*Chama a página sapatosFemininos via ajax*/
+    $(".botaoSapatosFemininos").click(function () {
+        $("#conteudo").load("sapatosFemininos.html");
+    });
+    
     /*Faz aparecer e desaparecer os botões laterais das meninas*/
     $("#meninas").click(function () {
         $(this).css("color", "black");
