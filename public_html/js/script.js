@@ -37,6 +37,15 @@ $(document).ready(function () {
             $("#botaoLateralRoupasMasculinas").slideToggle("slow");
         });
     });
+    
+    /*Chama a página roupasMeninos via ajax*/
+    $(".botaoRoupasMasculinas").click(function () {
+        $("#conteudo").load("roupasMeninos.html");
+    });
+     /*Chama a página sapatosMasculinos via ajax*/
+    $(".botaoSapatosMasculinos").click(function () {
+        $("#conteudo").load("sapatoMasculino.html");
+    });
 
 
 
