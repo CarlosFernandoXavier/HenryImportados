@@ -110,7 +110,9 @@ div.container-fluid{
 }
 .thumbnail:hover{
     box-shadow: 1px 1px 4px black;
+    border: 1px solid #3c763d;
 }
+
 @media screen and (max-width: 414px){
     #menuLateral{
         display: none;
