@@ -7,9 +7,6 @@ and open the template in the editor.
     Created on : 24/10/2017, 00:23:16
     Author     : Carlos
 */
-h4 a#desenvolvedor{
-    margin-bottom: 300px;
-}
 .navbar-header{
     background-color: #f780b8;
 }
@@ -111,7 +108,7 @@ div#produtoDestaque{
 footer{
     margin-top: 2%;
     margin-bottom: 2%;
-    /*background-color: #f780b8;*/
+    margin-bottom: 40px;
 }
 div.container-fluid{
     width: 100%;
