@@ -7,9 +7,22 @@ and open the template in the editor.
     Created on : 24/10/2017, 00:23:16
     Author     : Carlos
 */
+.navbar-header{
+    background-color: #f780b8;
+}
+div#myNavbar{
+    background-color: rgb(232, 210, 212);
 
+}
+.navbar-inverse .navbar-nav>li>a{
+    color:#000;
+}
+#myNavbar ul li ul li a{
+    color:#000;
+}
 header{
     background-color: #f780b8;
+    /*background-color: #ffe75e;*/
 }
 form#formulario{
     width: 29%;
@@ -31,9 +44,9 @@ img#carrinhoCompras{
 #menuLateral{
     margin-left: -1.2%;
 }
-#acessorios{
+/*#acessorios{
     margin-left: 25%;
-}
+}*/
 
 a#teste{
     margin-left:400px;/*Retirar isso quando começar a diminuir a tela no media query*/
@@ -85,11 +98,6 @@ div#meninos{
 div.thumbnail{
     height: 369px;
 }
-/*div.thumbnail a img:hover{
-    width: 70%;
-    transition: width 6s;
-    
-}*/
 .margemEsquerda {
     margin-left: 15.5%;
 }
@@ -112,7 +120,6 @@ div.container-fluid{
     box-shadow: 1px 1px 4px black;
     border: 1px solid #3c763d;
 }
-
 @media screen and (max-width: 414px){
     #menuLateral{
         display: none;
@@ -129,9 +136,9 @@ div.container-fluid{
         margin-left: 25%;
         margin-left: 28%
     }
-    #acessorios{
+    /*#acessorios{
         margin-left: 0px;
-    }
+    }*/
 }
 @media screen and (min-width: 414px){
     #menuLateral{
@@ -149,11 +156,33 @@ div.container-fluid{
         margin-left: 25%;
         margin-left: 28%
     }
-    #acessorios{
+    /*#acessorios{
         margin-left: 0px;
-    }
+    }*/
 }
 
+@media screen and (max-width: 572px){
+    .navbar-inverse{
+        display: block;
+    }
+    header, .amarelo{
+        display:none;
+    }
+    div#section{
+        margin-top: -20px;
+    }
+}
+@media screen and (min-width: 573px){
+    .navbar-inverse{
+        display: none;
+    }
+    header, .amarelo{
+        display:block;
+    }
+    div#section{
+        margin-top: 0px;
+    }
+}
 
 @media screen and (min-width: 640px){
     #menuLateral{
@@ -163,9 +192,9 @@ div.container-fluid{
         margin-bottom: 1%;
         margin-top: -75px;
     }
-    #acessorios{
+    /*#acessorios{
         margin-left: 0%;
-    }
+    }*/
     img#logo{
         margin-left: 0%;
     }
