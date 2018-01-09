@@ -11,7 +11,7 @@ $(document).ready(function () {
         $("#botaoLateralAcessorios").css("color","#ffb5ba");//Ainda o botão não fica rosa quando clica nele - botão lateral de acessórios
     });
     /*Chama a página inicio.html quando o botao inicio for clicado*/
-    $("#inicio").click(function () {
+    $(".inicio").click(function () {
         $("#conteudo").load("inicio.html");
     });
     /*Chama a página roupasMeninas via ajax*/
