@@ -8,7 +8,7 @@ $(document).ready(function () {
     /*Chama a página acessorios.html quando o botaoAcessorios for clicado*/
     $(".botaoAcessorios").click(function () {
         $("#conteudo").load("acessorios.html");
-        $("#botaoLateralAcessorios").css("color","#ffb5ba");//Ainda o botão não fica rosa quando clica nele - botão lateral de acessórios
+        $("#botaoLateralAcessorios").css("color", "#ffb5ba");//Ainda o botão não fica rosa quando clica nele - botão lateral de acessórios
     });
     /*Chama a página inicio.html quando o botao inicio for clicado*/
     $(".inicio").click(function () {
@@ -18,11 +18,11 @@ $(document).ready(function () {
     $(".botaoRoupaFeminina").click(function () {
         $("#conteudo").load("roupasMeninas.html");
     });
-     /*Chama a página sapatosFemininos via ajax*/
+    /*Chama a página sapatosFemininos via ajax*/
     $(".botaoSapatosFemininos").click(function () {
         $("#conteudo").load("sapatosFemininos.html");
     });
-    
+
     /*Faz aparecer e desaparecer os botões laterais das meninas*/
     $("#meninas").click(function () {
         $(this).css("color", "black");
@@ -37,20 +37,69 @@ $(document).ready(function () {
             $("#botaoLateralRoupasMasculinas").slideToggle("slow");
         });
     });
-    
+
     /*Chama a página roupasMeninos via ajax*/
     $(".botaoRoupasMasculinas").click(function () {
         $("#conteudo").load("roupasMeninos.html");
     });
-     /*Chama a página sapatosMasculinos via ajax*/
+    /*Chama a página sapatosMasculinos via ajax*/
     $(".botaoSapatosMasculinos").click(function () {
         $("#conteudo").load("sapatoMasculino.html");
     });
+    /*Cor chocolate nas subopções do 1º menu - versão mobile*/
+    $("#myNavbar ul li ul li a").css("color","#d2691e");
+    /*Efeito de fundo rosa claro quando uma opção do menu mobile é clicada*/
+    $("#1").click(function () {
+        $(this).css("backgroundColor", "#ffe4c4");
+        $("#2").css("backgroundColor", "#faebd7");
+        $("#3").css("backgroundColor", "#faebd7");
+        $("#4").css("backgroundColor", "#faebd7");
+        $("#5").css("backgroundColor", "#faebd7");
+        $("#6").css("backgroundColor", "#faebd7");
+    });
+    $("#2").click(function () {
+        $(this).css("backgroundColor", "#ffe4c4");
+        $("#1").css("backgroundColor", "#faebd7");
+        $("#3").css("backgroundColor", "#faebd7");
+        $("#4").css("backgroundColor", "#faebd7");
+        $("#5").css("backgroundColor", "#faebd7");
+        $("#6").css("backgroundColor", "#faebd7");
+    });
+    $("#3").click(function () {
+        $(this).css("backgroundColor", "#ffe4c4");
+        $("#1").css("backgroundColor", "#faebd7");
+        $("#2").css("backgroundColor", "#faebd7");
+        $("#4").css("backgroundColor", "#faebd7");
+        $("#5").css("backgroundColor", "#faebd7");
+        $("#6").css("backgroundColor", "#faebd7");
+    });
+    $("#4").click(function () {
+        $(this).css("backgroundColor", "#ffe4c4");
+        $("#1").css("backgroundColor", "#faebd7");
+        $("#2").css("backgroundColor", "#faebd7");
+        $("#3").css("backgroundColor", "#faebd7");
+        $("#5").css("backgroundColor", "#faebd7");
+        $("#6").css("backgroundColor", "#faebd7");
+    });
+    $("#5").click(function () {
+        $(this).css("backgroundColor", "#ffe4c4");
+        $("#1").css("backgroundColor", "#faebd7");
+        $("#2").css("backgroundColor", "#faebd7");
+        $("#3").css("backgroundColor", "#faebd7");
+        $("#4").css("backgroundColor", "#faebd7");
+        $("#6").css("backgroundColor", "#faebd7");
+    });
+    $("#6").click(function () {
+        $(this).css("backgroundColor", "#ffe4c4");
+        $("#1").css("backgroundColor", "#faebd7");
+        $("#2").css("backgroundColor", "#faebd7");
+        $("#3").css("backgroundColor", "#faebd7");
+        $("#4").css("backgroundColor", "#faebd7");
+        $("#5").css("backgroundColor", "#faebd7");
+    });
 
 
-
-    /*TROCAR AS IMAGENS DE FRETE E COMPRA POR UM BOTÃO DE COMPRAS COM UM CARRINHO*/
-
+   
 
     /*Faz o efeito de zoom nas imagens
      $(".thumbnail a img").hover(function () {
