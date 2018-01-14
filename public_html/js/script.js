@@ -37,7 +37,10 @@ $(document).ready(function () {
             $("#botaoLateralRoupasMasculinas").slideToggle("slow");
         });
     });
-
+    //Tira o sublinhado de elementos que estejam dento da tag <a>, assim o
+    //o texto "Menu" do menu mobile fica sem o underline
+    $("a").css("textDecoration","none");
+    
     /*Chama a página roupasMeninos via ajax*/
     $(".botaoRoupasMasculinas").click(function () {
         $("#conteudo").load("roupasMeninos.html");
