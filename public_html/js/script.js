@@ -100,7 +100,18 @@ $(document).ready(function () {
         $("#4").css("backgroundColor", "#faebd7");
         $("#5").css("backgroundColor", "#faebd7");
     });
-
+    /*Efeito sombreado quando o botão menu mobile para indicar quando ele está clicado
+     * ou não*/
+    var cliqueBotao=false;
+    $("button#botaoMenuMobile").click(function(){
+        if(!cliqueBotao){
+            $(this).css("boxShadow","0px 0px 4px black");
+            cliqueBotao=true;
+        }else{
+            $(this).css("boxShadow","none");
+            cliqueBotao=false;
+        }
+    });
 
    
 
