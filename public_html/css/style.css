@@ -221,7 +221,7 @@ div.container-fluid{
         margin-left: 0%;
     }
     div.thumbnail {
-        height: 420px;
+        height: 300px;
     }
 }
 @media screen and (min-width : 768px ){
@@ -235,7 +235,7 @@ div.container-fluid{
         margin-left: 0%;
     }
     div.thumbnail {
-        height: 420px;
+        height: 300px;
     }
     #campoInput{
         margin-top: 55px;
