@@ -8,7 +8,8 @@ $(document).ready(function () {
     /*Chama a página acessorios.html quando o botaoAcessorios for clicado*/
     $(".botaoAcessorios").click(function () {
         $("#conteudo").load("acessorios.html");
-        $("#botaoLateralAcessorios").css("color", "#ffb5ba");//Ainda o botão não fica rosa quando clica nele - botão lateral de acessórios
+        $("#botaoLateralAcessorios").css("backgroundColor", "#ffb5ba");//O botão fica rosa quando clica nele - botão lateral de acessórios
+        $("#botaoLateralAcessorios").css("color", "#000000");//botão acessório lateral permanece com a letra preta quando é clicado
         $("#botaoMenuMobile").trigger("click");//dispara um clique no botao do menu, fechando o mesmo
     });
     /*Chama a página inicio.html quando o botao inicio for clicado*/
@@ -16,9 +17,6 @@ $(document).ready(function () {
         $("#conteudo").load("inicio.html");
         $("#botaoMenuMobile").trigger("click");//dispara um clique no botao do menu, fechando o mesmo
     });
-    /*$("#botaoMenuMobile").click(function(){
-     $("#myNavbar").slideDown();
-     });*/
     /*Chama a página roupasMeninas via ajax*/
     $(".botaoRoupaFeminina").click(function () {
         $("#conteudo").load("roupasMeninas.html");
@@ -28,6 +26,15 @@ $(document).ready(function () {
     $(".botaoSapatosFemininos").click(function () {
         $("#conteudo").load("sapatosFemininos.html");
         $("#botaoMenuMobile").trigger("click");//dispara um clique no botao do menu, fechando o mesmo
+    });
+    /*Chama a página paginaEmConstrucao via ajax*/
+    $(".botaoContato").click(function(){
+       $("#conteudo").load("paginaEmConstrucao.html") ;
+    });
+    /*Chama a página paginaEmConstrucao via ajax*/
+    $(".botaoOpcao").click(function(){
+       $("#conteudo").load("paginaEmConstrucao.html") ;
+       $("#botaoMenuMobile").trigger("click");//dispara um clique no botao do menu, fechando o mesmo
     });
 
     /*Faz aparecer e desaparecer os botões laterais das meninas*/
@@ -104,7 +111,6 @@ $(document).ready(function () {
         $("#3").css("backgroundColor", "#faebd7");
         $("#4").css("backgroundColor", "#faebd7");
         $("#6").css("backgroundColor", "#faebd7");
-        $("#botaoMenuMobile").trigger("click");//dispara um clique no botao do menu, fechando o mesmo
     });
     $("#6").click(function () {
         $(this).css("backgroundColor", "#ffe4c4");
@@ -114,6 +120,7 @@ $(document).ready(function () {
         $("#4").css("backgroundColor", "#faebd7");
         $("#5").css("backgroundColor", "#faebd7");
         $("#botaoMenuMobile").trigger("click");//dispara um clique no botao do menu, fechando o mesmo
+        
     });
     /*Efeito sombreado quando o botão menu mobile para indicar quando ele está clicado
      * ou não*/
