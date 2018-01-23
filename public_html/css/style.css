@@ -39,16 +39,12 @@ img#logo{
 img#carrinhoCompras{
     margin-top: 10%;
 }
-.amarelo{
-    background-color: #fff244;
+.rosaFraco{
+    background-color: antiquewhite;
 }
 #menuLateral{
     margin-left: -1.2%;
 }
-/*#acessorios{
-    margin-left: 25%;
-}*/
-
 a#teste{
     margin-left:400px;/*Retirar isso quando começar a diminuir a tela no media query*/
 }
@@ -110,6 +106,16 @@ div#produtoDestaque{
     margin-left: 16%;
     margin-top: 20px;
 }
+.compra{
+    /*Essa configurações abaixo centralizam elementos html*/
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.centralizarImagem{
+    margin-left: auto;
+    margin-right: auto;
+}
 #primeiroMenu{
     border:none;
 }
@@ -131,15 +137,19 @@ div.container-fluid{
     width: 100%;
 }
 #botaoLateralSapatosFemininos, #botaoLateralRoupasFemininas, #botaoLateralRoupasMasculinas, #botaoLateralSapatosMasculinos{
-    display:none;
+    /*display:none;*/
 }
 .thumbnail:hover{
     box-shadow: 1px 1px 4px black;
     border: 1px solid #3c763d;
 }
-/*#imagemConstrucao{
-    margin-left: 10%;
-}*/
+a div.caption.descricao{
+    height: 110px;
+}
+.tamanhoImagem{
+    height: 140px;
+}
+
 @media screen and (min-width: 412px){
 
     p#textoMenu{
@@ -185,7 +195,7 @@ div.container-fluid{
     .navbar-inverse{
         display: block;
     }
-    header, .amarelo{
+    header, .rosaFraco{
         display:none;
     }
     div#section{
