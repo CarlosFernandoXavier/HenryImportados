@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function () {  
     /*Redireciona para minha página no facebook*/
     $("#desenvolvedor").click(function () {
         window.open('https://www.facebook.com/carlos.fernando.5851', '_blank');
@@ -28,13 +28,13 @@ $(document).ready(function () {
         $("#botaoMenuMobile").trigger("click");//dispara um clique no botao do menu, fechando o mesmo
     });
     /*Chama a página paginaEmConstrucao via ajax*/
-    $(".botaoContato").click(function(){
-       $("#conteudo").load("paginaEmConstrucao.html") ;
+    $(".botaoContato").click(function () {
+        $("#conteudo").load("paginaEmConstrucao.html");
     });
     /*Chama a página paginaEmConstrucao via ajax*/
-    $(".botaoOpcao").click(function(){
-       $("#conteudo").load("paginaEmConstrucao.html") ;
-       $("#botaoMenuMobile").trigger("click");//dispara um clique no botao do menu, fechando o mesmo
+    $(".botaoOpcao").click(function () {
+        $("#conteudo").load("paginaEmConstrucao.html");
+        $("#botaoMenuMobile").trigger("click");//dispara um clique no botao do menu, fechando o mesmo
     });
 
     /*Faz aparecer e desaparecer os botões laterais das meninas*/
@@ -120,7 +120,7 @@ $(document).ready(function () {
         $("#4").css("backgroundColor", "#faebd7");
         $("#5").css("backgroundColor", "#faebd7");
         $("#botaoMenuMobile").trigger("click");//dispara um clique no botao do menu, fechando o mesmo
-        
+
     });
     /*Efeito sombreado quando o botão menu mobile para indicar quando ele está clicado
      * ou não*/
@@ -146,5 +146,25 @@ $(document).ready(function () {
      $(this).animate({width: "120px"}, "fast");
      });*/
 
+    /*Carrosel -*/
+// Instantiate the Bootstrap carousel
+    $('.multi-item-carousel').carousel({
+        interval: false
+    });
 
+// for every slide in carousel, copy the next slide's item in the slide.
+// Do the same for the next, next item.
+    $('.multi-item-carousel .item').each(function () {
+        var next = $(this).next();
+        if (!next.length) {
+            next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+
+        if (next.next().length > 0) {
+            next.next().children(':first-child').clone().appendTo($(this));
+        } else {
+            $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+        }
+    });
 });
