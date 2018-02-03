@@ -230,6 +230,9 @@ div.carousel-inner{
     #imagemConstrucao{
         margin-left: 4%;
     }
+    img#logo{
+        margin-left: 40%;
+    }
 }
 
 @media screen and (min-width: 640px){
@@ -241,7 +244,7 @@ div.carousel-inner{
         margin-top: -75px;
     }
     img#logo{
-        margin-left: 0%;
+        margin-left: 40%;
     }
     #imagemConstrucao{
         margin-left: 12%;
@@ -260,6 +263,9 @@ div.carousel-inner{
     #desktop{
         display: none;
     }
+    /*img#logo{
+        margin-left: 45%;
+    }*/
 }
 @media screen and (min-width : 768px ){
     #carroselMobile{
@@ -288,6 +294,9 @@ div.carousel-inner{
     }
     #imagemConstrucao{
         margin-left: 17%;
+    }
+    img#logo{
+        margin-left: 10%;
     }
 }
 @media screen and (min-width : 768px ){
