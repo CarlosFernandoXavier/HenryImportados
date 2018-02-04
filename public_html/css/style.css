@@ -165,11 +165,20 @@ div.carousel-inner{
     margin-left: 10%;
     width: 80%;
 }
-@media screen and (min-width: 412px){
-
+@media screen and (min-width: 360px){
     p#textoMenu{
-        margin-left: 87%;
+        margin-left: 85%;
     }
+}
+@media screen and (min-width: 375px){
+    p#textoMenu{
+        margin-left: 85%;
+    }
+}
+@media screen and (min-width: 412px){
+    p#textoMenu{
+        margin-left: 86%;
+    } 
 }
 @media screen and (max-width: 414px){
     #menuLateral{
@@ -187,6 +196,7 @@ div.carousel-inner{
         margin-left: 25%;
         margin-left: 28%
     }
+    
 }
 @media screen and (min-width: 414px){
     #menuLateral{
@@ -205,7 +215,21 @@ div.carousel-inner{
         margin-left: 28%
     }
 }
-
+@media screen and (min-width: 430px){
+    p#textoMenu{
+        margin-left: 87%;
+    }
+}
+@media screen and (min-width: 452px){
+    p#textoMenu{
+        margin-left: 88%;
+    }
+}
+@media screen and (min-width: 503px){
+    p#textoMenu{
+        margin-left: 89%;
+    }
+}
 @media screen and (max-width: 572px){
     .navbar-inverse{
         display: block;
@@ -235,6 +259,7 @@ div.carousel-inner{
     }
 }
 
+
 @media screen and (min-width: 640px){
     #menuLateral{
         display: none;
@@ -263,9 +288,6 @@ div.carousel-inner{
     #desktop{
         display: none;
     }
-    /*img#logo{
-        margin-left: 45%;
-    }*/
 }
 @media screen and (min-width : 768px ){
     #carroselMobile{
